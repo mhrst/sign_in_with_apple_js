@@ -1,3 +1,7 @@
+## [1.0.2] - 2020-01-29
+### Fixed
+  - Native support
+
 ## [1.0.1] - 2020-01-29
 ### Added
   - Missing docstrings
