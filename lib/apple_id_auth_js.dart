@@ -1,5 +1,5 @@
 @JS('AppleID.auth')
-library AppleID.auth;
+library apple_id_auth;
 
 import 'dart:js_util';
 
@@ -23,7 +23,7 @@ external void init(ClientConfigI options);
 ///  }
 /// }
 @JS('signIn')
-external _signIn();
+external dynamic _signIn();
 
 /// Calls the JS interop for `AppleID.auth.signIn()` and translates
 /// the returned Javascript Promise into a Dart [Future].
@@ -53,8 +53,8 @@ class SignInResponseI {
 @anonymous
 class AuthorizationI {
   external String get state;
-  external get code;
-  external get id_token;
+  external String get code;
+  external String get id_token;
 }
 
 @JS()

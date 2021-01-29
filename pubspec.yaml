@@ -1,6 +1,6 @@
 name: sign_in_with_apple_js
 description: "A Dart wrapper for the 'Sign in with Apple JS' framework."
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/truthmast/sign_in_with_apple_js
 repository: https://github.com/truthmast/sign_in_with_apple_js
 issue_tracker: https://github.com/truthmast/sign_in_with_apple_js/issues
@@ -10,3 +10,6 @@ environment:
 
 dependencies:
   js: ^0.6.0
+
+dev_dependencies:
+  pedantic: ^1.9.0
