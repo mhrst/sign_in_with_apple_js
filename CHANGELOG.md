@@ -1,3 +1,7 @@
+## [1.0.3] - 2020-01-29
+### Fixed
+  - Additional stubs for native support
+
 ## [1.0.2] - 2020-01-29
 ### Fixed
   - Native support

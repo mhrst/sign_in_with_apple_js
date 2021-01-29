@@ -1,7 +1,9 @@
 @JS('AppleID.auth')
 library apple_id_auth;
 
-import 'dart:js_util';
+import '_js_util_stub.dart'
+    // ignore: uri_does_not_exist
+    if (dart.library.html) 'package:js/js.dart';
 
 import '_js_stub.dart'
     // ignore: uri_does_not_exist
