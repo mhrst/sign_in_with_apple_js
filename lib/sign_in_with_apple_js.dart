@@ -5,7 +5,7 @@ import 'dart:html' as html;
 
 import '_js_util_stub.dart'
     // ignore: uri_does_not_exist
-    if (dart.library.html) 'package:js/js.dart';
+    if (dart.library.html) 'package:js/js_util.dart';
 import 'apple_id_js.dart' as apple_id;
 
 export 'apple_id_js.dart';

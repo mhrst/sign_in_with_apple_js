@@ -1,8 +1,6 @@
 @JS('AppleID')
 library apple_id;
 
-import 'dart:html';
-
 import '_js_stub.dart'
     // ignore: uri_does_not_exist
     if (dart.library.html) 'package:js/js.dart';
