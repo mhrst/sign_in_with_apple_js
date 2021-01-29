@@ -3,9 +3,12 @@ library sign_in_with_apple_js;
 import 'dart:async';
 import 'dart:html' as html;
 
-import 'apple_id_auth_js.dart' as apple_id_auth;
+import '_js_util_stub.dart'
+    // ignore: uri_does_not_exist
+    if (dart.library.html) 'package:js/js.dart';
+import 'apple_id_js.dart' as apple_id;
 
-export 'apple_id_auth_js.dart' hide signIn, init;
+export 'apple_id_js.dart';
 
 StreamSubscription _subAppleIDSignInOnSuccess, _subAppleIDSignInOnFailure;
 
@@ -13,8 +16,8 @@ StreamSubscription _subAppleIDSignInOnSuccess, _subAppleIDSignInOnFailure;
 ///
 /// Calling [initSignInWithApple] is optional if these options are
 /// specified in your html.
-void initSignInWithApple(apple_id_auth.ClientConfigI options) =>
-    apple_id_auth.init(options);
+void initSignInWithApple(apple_id.ClientConfigI options) =>
+    apple_id.auth.init(options);
 
 /// Listen to the failure event from Sign in with Apple JS
 StreamSubscription<html.Event> listenAppleIDSignInOnFailure(
@@ -32,8 +35,7 @@ StreamSubscription<html.Event> listenAppleIDSignInOnSuccess(
       html.document.on['AppleIDSignInOnSuccess'].listen(callback);
 }
 
-/// Make asynchronous call to Sign in with Apple
-///
-/// Returns a [Future] that resolves to a sign-in response from Apple
-Future<apple_id_auth.SignInResponseI> signInWithApple() =>
-    apple_id_auth.signIn();
+/// Calls the JS interop for `AppleID.auth.signIn()` and translates
+/// the returned Javascript Promise into a Dart [Future].
+Future<apple_id.SignInResponseI> signInWithApple() =>
+    promiseToFuture(apple_id.auth.signIn());

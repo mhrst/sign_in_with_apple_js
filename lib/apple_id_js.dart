@@ -1,29 +1,32 @@
-@JS('AppleID.auth')
-library apple_id_auth;
+@JS('AppleID')
+library apple_id;
 
-import '_js_util_stub.dart'
-    // ignore: uri_does_not_exist
-    if (dart.library.html) 'package:js/js.dart';
+import 'dart:html';
 
 import '_js_stub.dart'
     // ignore: uri_does_not_exist
     if (dart.library.html) 'package:js/js.dart';
 
-/// Initialize the authentication object with a configuration object.
-///
-/// https://developer.apple.com/documentation/sign_in_with_apple/authi/3230945-init
+/// A reference to the `AppleID.auth` object
 @JS()
-external void init(ClientConfigI options);
+AuthI auth;
 
-/// Calls the JS interop for `AppleID.auth.signIn()` and translates
-/// the returned Javascript Promise into a Dart [Future].
-Future<SignInResponseI> signIn() => promiseToFuture(_signIn());
-
-/// Sign in using the configuration object.
+/// The interface used to authenticate a user.
 ///
-/// https://developer.apple.com/documentation/sign_in_with_apple/authi/3261300-signin
-@JS('signIn')
-external dynamic _signIn();
+/// https://developer.apple.com/documentation/sign_in_with_apple/authi
+@JS()
+@anonymous
+class AuthI {
+  /// Initialize the authentication object with a configuration object.
+  ///
+  /// https://developer.apple.com/documentation/sign_in_with_apple/authi/3230945-init
+  external void init(ClientConfigI options);
+
+  /// Sign in using the configuration object.
+  ///
+  /// https://developer.apple.com/documentation/sign_in_with_apple/authi/3261300-signin
+  external Object signIn();
+}
 
 /// An object that contains a user’s authorization information.
 ///
