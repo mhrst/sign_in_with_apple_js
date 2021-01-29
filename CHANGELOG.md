@@ -1,3 +1,9 @@
+## [1.0.4] - 2020-01-29
+### Changed
+  - Renamed wrapper file
+  - Add `AuthI` interface
+  - Add `SignInErrorI` to js wrapper
+
 ## [1.0.3] - 2020-01-29
 ### Fixed
   - Additional stubs for native support

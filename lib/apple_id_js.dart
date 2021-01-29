@@ -65,6 +65,15 @@ class NameI {
   external String get lastName;
 }
 
+/// An object that contains error information.
+///
+/// https://developer.apple.com/documentation/sign_in_with_apple/signinerrori
+@JS()
+@anonymous
+class SignInErrorI {
+  external String get error;
+}
+
 /// An object that contains the response to a sign-in request.
 ///
 /// https://developer.apple.com/documentation/sign_in_with_apple/signinresponsei
