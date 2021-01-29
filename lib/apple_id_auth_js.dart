@@ -5,6 +5,9 @@ import 'dart:js_util';
 
 import 'package:js/js.dart';
 
+/// Initialize the authentication object with a configuration object.
+///
+/// https://developer.apple.com/documentation/sign_in_with_apple/authi/3230945-init
 @JS()
 external void init(ClientConfigI options);
 
@@ -12,23 +15,15 @@ external void init(ClientConfigI options);
 /// the returned Javascript Promise into a Dart [Future].
 Future<SignInResponseI> signIn() => promiseToFuture(_signIn());
 
-/// Returns a Promise for the below authorization response:
-/// {
-///  "authorization": {
-///    "state": "[STATE]",
-///    "code": "[CODE]",
-///    "id_token": "[ID_TOKEN]"
-///  },
-///  "user": {
-///    "email": "[EMAIL]",
-///    "name": {
-///      "firstName": "[FIRST_NAME]",
-///      "lastName": "[LAST_NAME]"
-///  }
-/// }
+/// Sign in using the configuration object.
+///
+/// https://developer.apple.com/documentation/sign_in_with_apple/authi/3261300-signin
 @JS('signIn')
 external dynamic _signIn();
 
+/// An object that contains a user’s authorization information.
+///
+/// https://developer.apple.com/documentation/sign_in_with_apple/authorizationi
 @JS()
 @anonymous
 class AuthorizationI {
@@ -37,6 +32,9 @@ class AuthorizationI {
   external String get state;
 }
 
+/// An object that contains a user’s configuration information.
+///
+/// https://developer.apple.com/documentation/sign_in_with_apple/clientconfigi
 @JS()
 @anonymous
 class ClientConfigI {
@@ -50,6 +48,9 @@ class ClientConfigI {
   });
 }
 
+/// An object that contains the user’s full name.
+///
+/// https://developer.apple.com/documentation/sign_in_with_apple/namei
 @JS()
 @anonymous
 class NameI {
@@ -57,6 +58,9 @@ class NameI {
   external String get lastName;
 }
 
+/// An object that contains the response to a sign-in request.
+///
+/// https://developer.apple.com/documentation/sign_in_with_apple/signinresponsei
 @JS()
 @anonymous
 class SignInResponseI {
@@ -64,6 +68,9 @@ class SignInResponseI {
   external UserI get user;
 }
 
+/// An object that contains the user’s name and email address.
+///
+/// https://developer.apple.com/documentation/sign_in_with_apple/useri
 @JS()
 @anonymous
 class UserI {
