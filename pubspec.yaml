@@ -6,7 +6,7 @@ repository: https://github.com/truthmast/sign_in_with_apple_js
 issue_tracker: https://github.com/truthmast/sign_in_with_apple_js/issues
 
 environment:
-  sdk: ">=2.10.0-0 <3.0.0"
+  sdk: ">=2.10.0 <3.0.0"
 
 dependencies:
   js: ^0.6.0

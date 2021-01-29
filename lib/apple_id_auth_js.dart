@@ -25,6 +25,8 @@ external void init(ClientConfigI options);
 @JS('signIn')
 external _signIn();
 
+/// Calls the JS interop for `AppleID.auth.signIn()` and translates
+/// the returned Javascript Promise into a Dart [Future].
 Future<SignInResponseI> signIn() => promiseToFuture(_signIn());
 
 @JS()
