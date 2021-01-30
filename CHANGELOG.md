@@ -1,3 +1,7 @@
+## [1.0.5] - 2020-01-30
+### Changed
+  - Using this package outside of the web throws exceptions
+
 ## [1.0.4] - 2020-01-29
 ### Changed
   - Renamed wrapper file
