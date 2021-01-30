@@ -1,3 +1,7 @@
+## [1.0.6] - 2020-01-30
+### Fixed
+  - Removed duplicate library declaration
+
 ## [1.0.5] - 2020-01-30
 ### Changed
   - Using this package outside of the web throws exceptions
