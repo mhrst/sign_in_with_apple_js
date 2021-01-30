@@ -29,7 +29,8 @@
 ## [1.0.0] - 2020-01-29
   - Initial release
 
-[Unreleased]: https://github.com/truthmast/sign_in_with_apple_js/compare/9d2bc0f5d8717c5ff55e2da1f7fb8785341099da...HEAD
+[Unreleased]: https://github.com/truthmast/sign_in_with_apple_js/compare/879e6c0c0b71375070ee09bef98e4222daf6dbdb...HEAD
+[1.0.5]: https://github.com/truthmast/sign_in_with_apple_js/compare/9d2bc0f5d8717c5ff55e2da1f7fb8785341099da...879e6c0c0b71375070ee09bef98e4222daf6dbdb
 [1.0.4]: https://github.com/truthmast/sign_in_with_apple_js/compare/e0bd0f45f942ae20f38d1bd1cf1d1360e4dcc052...9d2bc0f5d8717c5ff55e2da1f7fb8785341099da
 [1.0.3]: https://github.com/truthmast/sign_in_with_apple_js/compare/2cfc7ce887b79f35649e904701bf9faa0b163508...e0bd0f45f942ae20f38d1bd1cf1d1360e4dcc052
 [1.0.2]: https://github.com/truthmast/sign_in_with_apple_js/compare/acff126b2039985107c70521cd152045524d021e...2cfc7ce887b79f35649e904701bf9faa0b163508
