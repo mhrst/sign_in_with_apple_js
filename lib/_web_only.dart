@@ -1,5 +1,3 @@
-library sign_in_with_apple_js;
-
 import 'dart:async';
 import 'dart:html';
 
