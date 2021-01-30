@@ -7,7 +7,7 @@ import '_js_stub.dart'
 
 /// A reference to the `AppleID.auth` object
 @JS()
-AuthI auth;
+external AuthI get auth;
 
 /// The interface used to authenticate a user.
 ///
