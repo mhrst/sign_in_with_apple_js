@@ -37,7 +37,8 @@
 ## [1.0.0] - 2020-01-29
   - Initial release
 
-[Unreleased]: https://github.com/mhrst/sign_in_with_apple_js/compare/726a2238d66ac4889716a92ec020aa63ef95b3d6...HEAD
+[Unreleased]: https://github.com/mhrst/sign_in_with_apple_js/compare/1f0d175736e298f9505ae0e6eb6f76dbc7dc856b...HEAD
+[2.0.0]: https://github.com/mhrst/sign_in_with_apple_js/compare/726a2238d66ac4889716a92ec020aa63ef95b3d6...1f0d175736e298f9505ae0e6eb6f76dbc7dc856b
 [1.0.6]: https://github.com/mhrst/sign_in_with_apple_js/compare/879e6c0c0b71375070ee09bef98e4222daf6dbdb...726a2238d66ac4889716a92ec020aa63ef95b3d6
 [1.0.5]: https://github.com/mhrst/sign_in_with_apple_js/compare/9d2bc0f5d8717c5ff55e2da1f7fb8785341099da...879e6c0c0b71375070ee09bef98e4222daf6dbdb
 [1.0.4]: https://github.com/mhrst/sign_in_with_apple_js/compare/e0bd0f45f942ae20f38d1bd1cf1d1360e4dcc052...9d2bc0f5d8717c5ff55e2da1f7fb8785341099da
