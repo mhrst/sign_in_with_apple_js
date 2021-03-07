@@ -1,3 +1,7 @@
+## [2.0.0] - 2021-03-07
+### Changed
+  - Migrated to null-safety version of Dart
+
 ## [1.0.6] - 2020-01-30
 ### Fixed
   - Removed duplicate library declaration

@@ -5,7 +5,8 @@ import 'package:js/js_util.dart';
 
 import 'apple_id_js.dart' as apple_id;
 
-StreamSubscription _subAppleIDSignInOnSuccess, _subAppleIDSignInOnFailure;
+StreamSubscription<Event>? _subAppleIDSignInOnSuccess,
+    _subAppleIDSignInOnFailure;
 
 StreamSubscription<Event> listenAppleIDSignInOnFailure(
     Function(Event) callback) {

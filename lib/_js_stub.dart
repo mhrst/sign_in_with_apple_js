@@ -1,6 +1,6 @@
 class JS {
   final String name;
-  const JS([this.name]);
+  const JS([this.name = '']);
 }
 
 class _Anonymous {
