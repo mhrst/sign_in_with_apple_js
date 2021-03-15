@@ -17,11 +17,13 @@ void initSignInWithApple(apple_id.ClientConfigI options) =>
     apple_id.auth.init(options);
 
 /// Listen to the failure event from Sign in with Apple JS
-StreamSubscription listenAppleIDSignInOnFailure(Function callback) =>
+StreamSubscription<dynamic> listenAppleIDSignInOnFailure(
+        void Function(dynamic) callback) =>
     web_only.listenAppleIDSignInOnFailure(callback);
 
 /// Listen to the success event from Sign in with Apple JS
-StreamSubscription listenAppleIDSignInOnSuccess(Function callback) =>
+StreamSubscription<dynamic> listenAppleIDSignInOnSuccess(
+        void Function(dynamic) callback) =>
     web_only.listenAppleIDSignInOnSuccess(callback);
 
 /// Calls the JS interop for `AppleID.auth.signIn()` and translates

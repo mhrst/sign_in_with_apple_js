@@ -1,3 +1,7 @@
+## [2.0.1] - 2021-03-15
+### Fixed
+  - Types explicitly specified on event callbacks
+
 ## [2.0.0] - 2021-03-07
 ### Changed
   - Migrated to null-safety version of Dart

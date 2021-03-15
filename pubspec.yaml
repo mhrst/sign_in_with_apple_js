@@ -1,6 +1,6 @@
 name: sign_in_with_apple_js
 description: "A Dart wrapper for the 'Sign in with Apple JS' framework with helper methods to simplify usage."
-version: 2.0.0
+version: 2.0.1
 homepage: https://github.com/mhrst/sign_in_with_apple_js
 repository: https://github.com/mhrst/sign_in_with_apple_js
 issue_tracker: https://github.com/mhrst/sign_in_with_apple_js/issues
