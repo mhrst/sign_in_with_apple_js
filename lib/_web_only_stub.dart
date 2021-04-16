@@ -10,5 +10,5 @@ StreamSubscription<dynamic> listenAppleIDSignInOnSuccess(
         void Function(dynamic) callback) =>
     throw UnsupportedError('Listening to html events requires dart:html');
 
-Future<SignInResponseI> signInWithApple() =>
+Future<SignInResponseI?> signInWithApple() =>
     throw UnsupportedError('Signing in with Apple JS requires dart:html');

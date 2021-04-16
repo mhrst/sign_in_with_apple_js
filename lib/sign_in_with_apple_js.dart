@@ -28,5 +28,5 @@ StreamSubscription<dynamic> listenAppleIDSignInOnSuccess(
 
 /// Calls the JS interop for `AppleID.auth.signIn()` and translates
 /// the returned Javascript Promise into a Dart [Future].
-Future<apple_id.SignInResponseI> signInWithApple() =>
+Future<apple_id.SignInResponseI?> signInWithApple() =>
     web_only.signInWithApple();

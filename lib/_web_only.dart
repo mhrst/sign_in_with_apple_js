@@ -22,5 +22,10 @@ StreamSubscription<Event> listenAppleIDSignInOnSuccess(
       document.on['AppleIDSignInOnSuccess'].listen(callback);
 }
 
-Future<apple_id.SignInResponseI> signInWithApple() =>
-    promiseToFuture(apple_id.auth.signIn());
+Future<apple_id.SignInResponseI?> signInWithApple() async {
+  try {
+    return await promiseToFuture(apple_id.auth.signIn());
+  } catch (_) {
+    return null;
+  }
+}
