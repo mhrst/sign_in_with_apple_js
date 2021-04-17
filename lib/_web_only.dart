@@ -24,7 +24,9 @@ StreamSubscription<Event> listenAppleIDSignInOnSuccess(
 
 Future<apple_id.SignInResponseI?> signInWithApple() async {
   try {
-    return await promiseToFuture(apple_id.auth.signIn());
+    final future =
+        promiseToFuture<apple_id.SignInResponseI?>(apple_id.auth.signIn());
+    return future;
   } catch (_) {
     return null;
   }
